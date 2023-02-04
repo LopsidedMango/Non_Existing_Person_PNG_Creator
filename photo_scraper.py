@@ -20,7 +20,7 @@ for i in range(0, size):
     url = "https://thispersondoesnotexist.com/image"
     time.sleep(1)
     if main_location == "":
-        main_location = "C:\\Users\\
+        main_location = "C:\\Users\\"
     file_name = "people_photo"
     number = str(x)
     formatter = ".jfif"
