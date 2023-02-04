@@ -6,7 +6,7 @@ import time
 import os
 # 110 seconds to do 50
 size = int(input("How many photos do you want?"))
-
+# time estimate no longer accurate as this is V2 and i cant be bothered to calculate it again
 
 main_location = str(input("Input main file location e.g C:\\Users\\*NAME*"))
 max_file_size = int(input("What do you want your maximum file size to be? [in bytes]"))
