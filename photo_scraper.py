@@ -7,7 +7,8 @@ import os
 # 110 seconds to do 50
 size = int(input("How many photos do you want?"))
 # time estimate no longer accurate as this is V2 and i cant be bothered to calculate it again
-
+width = int(input("What width do you want?"))
+height = int(input("what height do you want?"))
 main_location = str(input("Input main file location e.g C:\\Users\\*NAME*"))
 max_file_size = int(input("What do you want your maximum file size to be? [in bytes]"))
 if max_file_size == 0:
@@ -29,7 +30,7 @@ for i in range(0, size):
     
     img = Image.open(BytesIO(img_binary))
     
-    img = img.resize((145, 180))
+    img = img.resize((width, height))
     
     img.save(actual)
     file_size = os.path.getsize(actual)
